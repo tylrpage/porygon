@@ -1,0 +1,60 @@
+tables:
+- users
+	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
+	- cognito_sub: text NOT NULL, UNIQUE
+- archetypes
+	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
+	- user_id: bigint NOT NULL, FK -> users.id, ON DELETE CASCADE
+	- name: text NOT NULL, UNIQUE (user_id, name)
+	- archetype_icon_id: bigint FK -> archetype_icons.id, ON DELETE SET NULL -- nullable; null means empty icon
+	- archetype_icon_2_id: bigint FK -> archetype_icons.id, ON DELETE SET NULL -- nullable; null means empty icon
+- decks
+	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
+	- user_id: bigint NOT NULL, FK -> users.id, CREATE INDEX, ON DELETE CASCADE
+	- name: text NOT NULL, CHECK (name <> '')
+	- archetype_id: bigint, FK -> archetypes.id, ON DELETE SET NULL -- nullable
+	- created_at: timestamptz NOT NULL DEFAULT now()
+	- notes: text NOT NULL DEFAULT ''
+- deck_versions
+	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
+	- deck_id: bigint, NOT NULL, FK -> decks.id, CREATE INDEX, ON DELETE CASCADE
+	- name: text, NOT NULL, CHECK (name <> '')
+	- cards: text, NOT NULL DEFAULT '' -- optional, formatted deck export code
+	- notes: text, NOT NULL DEFAULT ''
+	- created_at: timestamptz NOT NULL DEFAULT now()
+- matches -- best of x is determined by games count
+	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
+	- deck_version_id: bigint, NOT NULL, FK -> deck_versions.id, CREATE INDEX, ON DELETE CASCADE
+	- environment_id: bigint, FK -> environments.id, CREATE INDEX, ON DELETE SET NULL -- nullable; null means unknown
+	- played_at: timestamptz, NOT NULL DEFAULT now()
+- games
+	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
+	- match_id: bigint, NOT NULL, FK -> matches.id, ON DELETE CASCADE -- index covered by UNIQUE (match_id, game_number)
+	- outcome: game_outcome NOT NULL
+	- opponent_archetype_id: bigint, FK -> archetypes.id, CREATE INDEX, ON DELETE SET NULL -- nullable; means unkown
+	- live_log: text -- nullable; null means game has no log
+	- went_first: bool -- nullable; null means unknown
+	- won_flip: bool -- nullable; null means unknown
+	- notes: text NOT NULL DEFAULT ''
+	- my_prizes_left: int, CHECK (my_prizes_left BETWEEN 0 AND 6) --nullable, null means unknown
+	- opponents_prizes_left: int, CHECK (opponents_prizes_left BETWEEN 0 AND 6) -- nullable, null means unknown
+	- game_number: int NOT NULL DEFAULT 1, CHECK (game_number > 0), UNIQUE (match_id, game_number)
+- tags
+	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
+	- user_id: bigint FK -> users.id, ON DELETE CASCADE -- nullable; null means global
+	- name: text NOT NULL CHECK (name <> '')
+	- UNIQUE NULLS NOT DISTINCT (user_id, name) -- nulls not distinct prevents non unique global tags
+- games_tags
+	- game_id: bigint NOT NULL, FK -> games.id, ON DELETE CASCADE
+	- tag_id: bigint NOT NULL, CREATE INDEX, FK -> tags.id, ON DELETE CASCADE
+	- PRIMARY KEY (game_id, tag_id)
+- environments
+	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
+	- name: text NOT NULL, UNIQUE, CHECK (name <> '')
+- archetype_icons
+	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
+	- name: text NOT NULL, UNIQUE, CHECK (name <> '') -- pokemon name, ex: Dipplin, Mega Lucario
+	- image_url: text -- nullable; no image, use placeholder
+
+enums:
+- game_outcome: win, loss, tie
