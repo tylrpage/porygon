@@ -1,0 +1,22 @@
+# CLAUDE GENERATED
+# Local development services. Start with: docker compose up -d
+services:
+  db:
+    image: postgres:17
+    environment:
+      # Dev-only credentials. Production uses Neon with real secrets.
+      POSTGRES_USER: porygon
+      POSTGRES_PASSWORD: porygon
+      POSTGRES_DB: porygon
+    ports:
+      - "5432:5432" # host:container
+    volumes:
+      - pgdata:/var/lib/postgresql/data # keep data across container restarts
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U porygon -d porygon"]
+      interval: 2s
+      timeout: 3s
+      retries: 15
+
+volumes:
+  pgdata:
