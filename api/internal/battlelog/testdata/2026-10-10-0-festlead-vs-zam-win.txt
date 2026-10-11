@@ -1,0 +1,333 @@
+Setup
+[Opponent] chose tails for the opening coin flip.
+[Me] won the coin toss.
+[Me] decided to go first.
+[Opponent] drew 7 cards for the opening hand.
+- 7 drawn cards.
+[Me] drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • Thwackey, Night Stretcher, Boss's Orders, Festival Grounds, Ultra Ball, Growing Grass Energy, Applin
+[Opponent] played Dedenne to the Active Spot.
+[Me] played Applin to the Active Spot.
+
+[Me]'s Turn
+[Me] drew Lillie's Determination.
+[Me] played Ultra Ball.
+- [Me] discarded 2 cards.
+   • Boss's Orders, Festival Grounds
+- [Me] drew Grookey.
+- [Me] shuffled their deck.
+[Me] played Grookey to the Bench.
+[Me] attached Growing Grass Energy to Applin in the Active Spot.
+[Me] ended their turn.
+
+[Opponent]'s Turn
+[Opponent] drew a card.
+[Opponent] played Dunsparce to the Bench.
+[Opponent] attached Telepathic Psychic Energy to Dedenne in the Active Spot.
+Telepathic Psychic Energy was activated.
+- [Opponent] drew 2 cards and played them to the Bench.
+   • Abra, Abra
+- [Opponent] shuffled their deck.
+[Opponent] played Boss's Orders.
+- [Me]'s Grookey was switched with [Me]'s Applin to become the Active Pokémon.
+[Me]'s Grookey is now in the Active Spot.
+[Opponent] played Buddy-Buddy Poffin.
+- [Opponent] drew 2 cards and played them to the Bench.
+   • Dunsparce, Dunsparce
+- [Opponent] shuffled their deck.
+[Opponent]'s Dedenne used Electromagnetic Sonar.
+- [Opponent] moved [Opponent]'s Boss's Orders to their hand.
+
+[Me]'s Turn
+[Me] drew Rabsca.
+[Me] evolved Grookey to Thwackey in the Active Spot.
+[Me] played Lillie's Determination.
+- [Me] shuffled 2 cards into their deck.
+   • Night Stretcher, Rabsca
+- [Me] drew 8 cards.
+   • Night Stretcher, Dipplin, Festival Grounds, Tool Scrapper, Buddy-Buddy Poffin, Poké Pad, Thwackey, Growing Grass Energy
+[Me] played Buddy-Buddy Poffin.
+- [Me] drew 2 cards and played them to the Bench.
+   • Grookey, Applin
+- [Me] shuffled their deck.
+[Me] ended their turn.
+
+[Opponent]'s Turn
+[Opponent] drew a card.
+[Opponent] attached Basic Psychic Energy to Abra on the Bench.
+[Opponent]'s Dedenne used Electromagnetic Sonar.
+- [Opponent] moved [Opponent]'s Buddy-Buddy Poffin to their hand.
+
+[Me]'s Turn
+[Me] drew Gladion's Final Battle.
+[Me] ended their turn.
+
+[Opponent]'s Turn
+[Opponent] drew a card.
+[Opponent] evolved Abra to Kadabra on the Bench.
+[Opponent]'s Kadabra used Psychic Draw.
+- [Opponent] drew 2 cards.
+[Opponent] attached Telepathic Psychic Energy to Kadabra on the Bench.
+[Opponent]'s Dedenne used Gnaw on [Me]’s Thwackey for 30 damage.
+
+[Me]'s Turn
+[Me] drew Poké Pad.
+[Me] ended their turn.
+
+[Opponent]'s Turn
+[Opponent] drew a card.
+[Opponent] attached Lucky Helmet to Dedenne in the Active Spot.
+[Opponent]'s Dedenne used Gnaw on [Me]’s Thwackey for 30 damage.
+
+[Me]'s Turn
+[Me] drew Basic Grass Energy.
+[Me] attached Basic Grass Energy to Applin on the Bench.
+[Me] ended their turn.
+
+[Opponent]'s Turn
+[Opponent] drew a card.
+[Opponent] played Enhanced Hammer.
+- Growing Grass Energy was discarded from [Me]'s Applin.
+[Opponent]'s Dedenne used Electromagnetic Sonar.
+- [Opponent] moved [Opponent]'s Enhanced Hammer to their hand.
+
+[Me]'s Turn
+[Me] drew Festival Grounds.
+[Me] ended their turn.
+
+[Opponent]'s Turn
+[Opponent] drew a card.
+[Opponent] evolved Dunsparce to Dudunsparce on the Bench.
+[Opponent] played Dudunsparce.
+- [Opponent] drew 3 cards.
+- [Opponent] shuffled 2 cards into their deck.
+   • Dudunsparce, Dunsparce
+[Opponent] played Hilda.
+- [Opponent] drew 2 cards.
+   • Alakazam, Enriching Energy
+- [Opponent] shuffled their deck.
+[Opponent] attached Enriching Energy to Dunsparce on the Bench.
+Enriching Energy was activated.
+- [Opponent] drew 4 cards.
+[Opponent] evolved Dunsparce to Dudunsparce on the Bench.
+[Opponent] played Dudunsparce.
+- [Opponent] drew 3 cards.
+- [Opponent] shuffled 3 cards into their deck.
+   • Dudunsparce, Enriching Energy, Dunsparce
+[Opponent] played Buddy-Buddy Poffin.
+- [Opponent] drew 2 cards and played them to the Bench.
+   • Dunsparce, Dunsparce
+- [Opponent] shuffled their deck.
+[Opponent] evolved Dunsparce to Dudunsparce on the Bench.
+[Opponent] played Rare Candy.
+- [Opponent] evolved Abra to Alakazam on the Bench.
+[Opponent]'s Alakazam used Psychic Draw.
+- [Opponent] drew 3 cards.
+[Opponent] retreated Dedenne to the Bench.
+- Telepathic Psychic Energy was discarded from [Opponent]'s Dedenne.
+[Opponent]'s Alakazam is now in the Active Spot.
+[Opponent]'s Alakazam used Powerful Hand.
+- [Opponent] put 30 damage counters on [Opponent]'s Thwackey.
+[Me]'s Thwackey was Knocked Out!
+Grookey was discarded from [Me]'s Thwackey.
+[Opponent] took a Prize card.
+A card was added to [Opponent]'s hand.
+[Me]'s Applin is now in the Active Spot.
+
+[Me]'s Turn
+[Me] drew Lillie's Determination.
+[Me] evolved Grookey to Thwackey on the Bench.
+[Me] evolved Applin to Dipplin in the Active Spot.
+[Me] played Festival Grounds to the Stadium spot.
+[Me] played Poké Pad.
+- [Me] drew Dipplin.
+- [Me] shuffled their deck.
+[Me] evolved Applin to Dipplin on the Bench.
+[Me] played Night Stretcher.
+- [Me] moved [Me]'s Grookey to their hand.
+[Me] played Grookey to the Bench.
+[Me] played Lillie's Determination.
+- [Me] shuffled 5 cards into their deck.
+   • Festival Grounds, Tool Scrapper, Poké Pad, Growing Grass Energy, Gladion's Final Battle
+- [Me] drew 8 cards.
+   • Goldeen, Rabsca, Lillie's Determination, Psyduck, Festival Grounds, Rellor, Goldeen, Thwackey
+[Me] played Goldeen to the Bench.
+[Me]'s Thwackey used Boom Boom Groove.
+- [Me] drew Applin.
+- [Me] shuffled their deck.
+[Me] played Applin to the Bench.
+[Me]'s Dipplin used Do the Wave on [Opponent]’s Alakazam for 100 damage.
+- Damage breakdown:
+   • 5 Benched Pokémon: 100 damage
+
+[Me]'s Dipplin used Festival Lead.
+- Damage breakdown:
+   • 5 Benched Pokémon: 100 damage
+
+- [Me]'s Dipplin used Do the Wave on [Opponent]’s Alakazam for 100 damage.
+- [Me] chose Do the Wave
+[Opponent]'s Alakazam was Knocked Out!
+- 2 cards were discarded from [Opponent]'s Alakazam.
+   • Basic Psychic Energy, Abra
+[Me] took a Prize card.
+Seaking was added to [Me]'s hand.
+[Opponent]'s Kadabra is now in the Active Spot.
+
+[Opponent]'s Turn
+[Opponent] drew a card.
+[Opponent] played Battle Cage to the Stadium spot.
+- [Me] discarded Festival Grounds.
+[Opponent] evolved Kadabra to Alakazam in the Active Spot.
+[Opponent]'s Alakazam used Psychic Draw.
+- [Opponent] drew 3 cards.
+[Opponent] played Poké Pad.
+- [Opponent] drew Dudunsparce.
+- [Opponent] shuffled their deck.
+[Opponent] evolved Dunsparce to Dudunsparce on the Bench.
+[Opponent] attached Enriching Energy to Dudunsparce on the Bench.
+Enriching Energy was activated.
+- [Opponent] drew 4 cards.
+[Opponent]'s Dudunsparce used Run Away Draw.
+- [Opponent] drew 3 cards.
+- [Opponent] shuffled 3 cards into their deck.
+   • Dudunsparce, Enriching Energy, Dunsparce
+[Opponent] played Dudunsparce.
+- [Opponent] drew 3 cards.
+- [Opponent] shuffled 2 cards into their deck.
+   • Dudunsparce, Dunsparce
+[Opponent] played Buddy-Buddy Poffin.
+- [Opponent] drew 2 cards and played them to the Bench.
+   • Dunsparce, Dunsparce
+- [Opponent] shuffled their deck.
+[Opponent] evolved Dunsparce to Dudunsparce on the Bench.
+[Opponent] played Poké Pad.
+- [Opponent] drew Dudunsparce.
+- [Opponent] shuffled their deck.
+[Opponent] attached Air Balloon to Dudunsparce on the Bench.
+[Opponent] played Dudunsparce.
+- [Opponent] drew 3 cards.
+- [Opponent] shuffled 3 cards into their deck.
+   • Dudunsparce, Dunsparce, Air Balloon
+[Opponent] played Eri.
+[Opponent] played Sacred Ash.
+- [Opponent] shuffled 2 cards into their deck.
+   • Abra, Alakazam
+[Opponent] played Buddy-Buddy Poffin.
+- [Opponent] drew 2 cards and played them to the Bench.
+   • Abra, Dunsparce
+- [Opponent] shuffled their deck.
+[Opponent] played Wondrous Patch.
+- [Opponent] attached Basic Psychic Energy to Abra on the Bench.
+[Opponent]'s Alakazam used Powerful Hand.
+- [Opponent] put 44 damage counters on [Opponent]'s Dipplin.
+[Me]'s Dipplin was Knocked Out!
+- 2 cards were discarded from [Me]'s Dipplin.
+   • Basic Grass Energy, Applin
+[Opponent] took a Prize card.
+A card was added to [Opponent]'s hand.
+[Me]'s Dipplin is now in the Active Spot.
+
+[Me]'s Turn
+[Me] drew Boss's Orders.
+[Me] evolved Goldeen to Seaking on the Bench.
+[Me] evolved Grookey to Thwackey on the Bench.
+[Me] played Festival Grounds to the Stadium spot.
+- [Opponent] discarded Battle Cage.
+[Me] played Lillie's Determination.
+- [Me] shuffled 5 cards into their deck.
+   • Goldeen, Rabsca, Psyduck, Rellor, Boss's Orders
+- [Me] drew 6 cards.
+   • Air Balloon, Switch, Poké Pad, Secret Box, Lillie's Determination, Psyduck
+[Me]'s Thwackey used Boom Boom Groove.
+- [Me] drew Basic Grass Energy.
+- [Me] shuffled their deck.
+[Me] attached Basic Grass Energy to Dipplin in the Active Spot.
+[Me]'s Thwackey used Boom Boom Groove.
+- [Me] drew Dipplin.
+- [Me] shuffled their deck.
+[Me] evolved Applin to Dipplin on the Bench.
+[Me]'s Dipplin used Do the Wave on [Opponent]’s Alakazam for 80 damage.
+- Damage breakdown:
+   • 4 Benched Pokémon: 80 damage
+
+[Me]'s Dipplin used Festival Lead.
+- Damage breakdown:
+   • 4 Benched Pokémon: 80 damage
+
+- [Me]'s Dipplin used Do the Wave on [Opponent]’s Alakazam for 80 damage.
+- [Me] chose Do the Wave
+[Opponent]'s Alakazam was Knocked Out!
+- 3 cards were discarded from [Opponent]'s Alakazam.
+   • Telepathic Psychic Energy, Kadabra, Abra
+[Me] took a Prize card.
+Grookey was added to [Me]'s hand.
+[Opponent]'s Abra is now in the Active Spot.
+
+[Opponent]'s Turn
+[Opponent] drew a card.
+[Opponent] played Rare Candy.
+- [Opponent] evolved Abra to Alakazam in the Active Spot.
+[Opponent]'s Alakazam used Psychic Draw.
+- [Opponent] drew 3 cards.
+[Opponent] played Battle Cage to the Stadium spot.
+- [Me] discarded Festival Grounds.
+[Opponent] attached Enriching Energy to Dunsparce on the Bench.
+Enriching Energy was activated.
+- [Opponent] drew 4 cards.
+[Opponent] attached Air Balloon to Dunsparce on the Bench.
+[Opponent] evolved Dunsparce to Dudunsparce on the Bench.
+[Opponent] played Dudunsparce.
+- [Opponent] drew 2 cards.
+- [Opponent] shuffled 4 cards into their deck.
+   • Dudunsparce, Enriching Energy, Dunsparce, Air Balloon
+[Opponent] evolved Dunsparce to Dudunsparce on the Bench.
+[Opponent] played Lana's Aid.
+- [Opponent] moved [Opponent]'s 3 cards to their hand.
+   • Abra, Kadabra, Alakazam
+[Opponent] played Abra to the Bench.
+[Opponent] evolved Dunsparce to Dudunsparce on the Bench.
+[Opponent]'s Alakazam used Powerful Hand.
+- [Opponent] put 52 damage counters on [Opponent]'s Dipplin.
+[Me]'s Dipplin was Knocked Out!
+- 2 cards were discarded from [Me]'s Dipplin.
+   • Basic Grass Energy, Applin
+[Opponent] took a Prize card.
+A card was added to [Opponent]'s hand.
+[Me]'s Seaking is now in the Active Spot.
+
+[Me]'s Turn
+[Me] drew Festival Grounds.
+[Me]'s Thwackey used Boom Boom Groove.
+- [Me] drew Boss's Orders.
+- [Me] shuffled their deck.
+[Me]'s Thwackey used Boom Boom Groove.
+- [Me] drew Growing Grass Energy.
+- [Me] shuffled their deck.
+[Me] played Festival Grounds to the Stadium spot.
+- [Opponent] discarded Battle Cage.
+[Me] attached Growing Grass Energy to Seaking in the Active Spot.
+[Me] played Boss's Orders.
+- [Opponent]'s Dedenne was switched with [Opponent]'s Alakazam to become the Active Pokémon.
+[Opponent]'s Dedenne is now in the Active Spot.
+[Me]'s Seaking used Rapid Draw on [Opponent]’s Dedenne for 60 damage.
+- [Me] drew 2 cards.
+   • Goldeen, Buddy-Buddy Poffin
+Lucky Helmet was activated.
+- [Opponent] drew 2 cards.
+[Me]'s Seaking used Festival Lead.
+- [Me] chose Rapid Draw
+- [Me]'s Seaking used Rapid Draw on [Opponent]’s Dedenne for 60 damage.
+- [Me] drew 2 cards.
+   • Tool Scrapper, Poké Pad
+[Opponent]'s Dedenne was Knocked Out!
+Lucky Helmet was discarded from [Opponent]'s Dedenne.
+Lucky Helmet was activated.
+- [Opponent] drew 2 cards.
+[Me] took a Prize card.
+Ultra Ball was added to [Me]'s hand.
+[Opponent]'s Alakazam is now in the Active Spot.
+
+[Opponent]'s Turn
+Opponent's deck ran out of cards. [Me] wins.
+
