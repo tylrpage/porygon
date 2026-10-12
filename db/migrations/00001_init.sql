@@ -41,6 +41,7 @@ CREATE TABLE deck_versions (
     created_at          timestamptz NOT NULL DEFAULT now(),
     cards               text NOT NULL DEFAULT '',
     notes               text NOT NULL DEFAULT '',
+    updated_at          timestamptz NOT NULL DEFAULT now(),
     CONSTRAINT deck_versions_deck_id_name_key UNIQUE (deck_id, name)
 );
 CREATE INDEX deck_versions_deck_id_idx ON deck_versions (deck_id);
