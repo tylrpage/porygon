@@ -17,7 +17,7 @@ CREATE TABLE archetype_icons (
 CREATE TABLE archetypes (
     id                  bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     user_id             bigint NOT NULL REFERENCES users (id) ON DELETE CASCADE,
-    name                text NOT NULL CHECK (name <> ''),
+    name                text NOT NULL CHECK archetypes_name_not_empty (name <> ''),
     archetype_icon_id   bigint REFERENCES archetype_icons (id) ON DELETE SET NULL,
     archetype_icon2_id  bigint REFERENCES archetype_icons (id) ON DELETE SET NULL,
     CONSTRAINT archetypes_user_id_name_key UNIQUE (user_id, name)
