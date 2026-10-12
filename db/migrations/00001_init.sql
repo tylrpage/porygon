@@ -29,7 +29,8 @@ CREATE TABLE decks (
     name                text NOT NULL CONSTRAINT decks_name_not_empty CHECK (name <> ''),
     created_at          timestamptz NOT NULL DEFAULT now(),
     archetype_id        bigint REFERENCES archetypes (id) ON DELETE SET NULL,       -- nullable
-    notes               text NOT NULL DEFAULT ''
+    notes               text NOT NULL DEFAULT '',
+    CONSTRAINT decks_user_id_name_key UNIQUE (user_id, name)
 );
 CREATE INDEX decks_user_id_idx ON decks (user_id);
 
@@ -39,7 +40,8 @@ CREATE TABLE deck_versions (
     name                text NOT NULL CONSTRAINT deck_versions_name_not_empty CHECK (name <> ''),
     created_at          timestamptz NOT NULL DEFAULT now(),
     cards               text NOT NULL DEFAULT '',
-    notes               text NOT NULL DEFAULT ''
+    notes               text NOT NULL DEFAULT '',
+    CONSTRAINT deck_versions_deck_id_name_key UNIQUE (deck_id, name)
 );
 CREATE INDEX deck_versions_deck_id_idx ON deck_versions (deck_id);
 

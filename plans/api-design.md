@@ -37,7 +37,7 @@
         - "doesn't exist" and "not yours" should look identical
     - All requests could get a 400 if the user's request can't be understood by request-validation middleware
     - All POST and PUT requests could get a 422 if it gets past request-validation middleware but there is an issue with the request that the server catches, like an unknown id or invalid value
-    - Requests to POST or PUT can 409 if the unique constraint can't be kept, such as duplicate names
+    - Requests to POST or PUT can 409 if the unique constraint can't be kept, such as duplicate names on archetypes, decks, and deck versions
     - Errors use RFC 9457 with mandatory title and status fields
         - Content-type: application/problem+json
         - type will be left out, meaning it is nothing more than the HTTP status
