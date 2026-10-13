@@ -1,0 +1,193 @@
+# This is an open API description (OAD), it describes an HTTP-like API
+openapi: "3.0.3"
+info:
+  title: "Porygon REST API"
+  version: "0.1.0"
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+servers:
+  - url: http://localhost:8080
+    description: Local development
+components:
+  schemas:
+    Id:
+      type: integer
+      format: int64
+      minimum: 1
+    NullableId:
+      type: integer
+      format: int64
+      minimum: 1
+      nullable: true
+    ProblemDetails:
+      type: object
+      required: [title, status]
+      properties:
+        title:
+          type: string
+        status:
+          type: integer
+        detail:
+          type: string
+        invalid_params:
+          type: array
+          items:
+            type: object
+            required: [name, reason]
+            properties:
+              name:
+                type: string
+              reason:
+                type: string
+    Deck:
+      type: object
+      required: [id, name, created_at, notes]
+      properties:
+        id:
+          $ref: '#/components/schemas/Id'
+        name:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        archetype:
+          type: object
+          properties:
+            id:
+              $ref: '#/components/schemas/Id'
+            name:
+              type: string
+            archetype_icon:
+              type: object
+              properties:
+                name:
+                  type: string
+                image_url:
+                  type: string
+                  format: uri
+        notes:
+          type: string
+    DeckInput:
+      type: object
+      required: [name, archetype, notes]
+      properties:
+        name:
+          type: string
+          minLength: 1
+        archetype:
+          type: object
+          nullable: true
+          properties:
+            id:
+              $ref: '#/components/schemas/Id'
+            name:
+              type: string
+            archetype_icon:
+              type: object
+              properties:
+                name:
+                  type: string
+                image_url:
+                  type: string
+                  format: uri
+        notes:
+          type: string
+    #DeckVersion:
+    #DeckVersionInput:
+    #Archetype:
+    #ArchetypeInput:
+    #ArchetypeIcon:
+  securitySchemes:
+    JwtBearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: Cognito-issued access token in the Authorization header
+  responses:
+    BadRequest: #400
+      description: Request is unrecognized
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    Unauthorized: #401
+      description: Caller is unauthorized
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    NotFound: #404
+      description: Resource is not found or not owned by the caller
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    Conflict: #409
+      description: Content does not meet unique constraint
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    UnprocessableEntity: #422
+      description: Resource is invalid
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+    UnexpectedError: #500
+      description: Unexpected error
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/ProblemDetails'
+security:
+  - JwtBearerAuth: []
+paths:
+  /decks:
+    get:
+      summary: Gets user's decks
+      operationId: listDecks
+      responses:
+        '200':
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [decks]
+                properties:
+                  decks:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Deck'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        'default':
+          $ref: '#/components/responses/UnexpectedError'
+    post:
+      summary: Add a new deck
+      operationId: createDeck
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeckInput'
+      responses:
+        '200':
+          description: 'OK'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Deck'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '409':
+          $ref: '#/components/responses/Conflict'
+        '422':
+          $ref: '#/components/responses/UnprocessableEntity'
+        'default':
+          $ref: '#/components/responses/UnexpectedError'

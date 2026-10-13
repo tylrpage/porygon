@@ -1,3 +1,5 @@
+Note: this doc is outdated, it was an initial scratch pad, sql migrations are real source of truth for db
+
 tables:
 - users
 	- id: bigint GENERATED ALWAYS AS IDENTITY, PRIMARY KEY
