@@ -10,15 +10,8 @@ This app is a way for me to learn new web technologies through doing. It is an a
 - Frontend: React, TypeScript, Vite build tool, TanStack Query for managing data in React, hosted on S3 + CloudFront
 - Auth: Cognito
 
-# AI Use
-- Every line of every file is written by me, unless explicitly stated otherwise in the file
-- AI could probably create this project in 30 minutes, but I believe learning is a result of time and effort spent working through problems
-- On the other hand, I am trying to complete this project in a timely fashion while being exposed to a lot of new technologies, syntaxes, and patterns. To help focus my learning on information that is directly relevant to this project I use Claude Code
-- Claude is instructed that this is a learning project and that I want to learn by doing, as a result it avoids giving me direct answers and instead directs me to documentation resources, provides examples, points out errors in my understanding, and tells me what decisions I need to think through
-- I think there is also value in learning about the wrong things: accidentally reading documentation for the wrong system, learning about a database or library you decide not to use, or dechipering a confusing syntax error through google. But I think for this project, my current approach is the best way to balance time spent
-
 # Status
-The project is still in active development
+The project is very much **incomplete** and still in active development
 ## Done
 - Defined feature set and implementation milestone plan (see /plans/milestones.md)
 - Data model design and migration complete (see /db/migrations/00001_init.sql)
@@ -34,6 +27,13 @@ The project is still in active development
 - Battle log parser, auto fill game result info by pasting PTCG Live battlelog
 - Deployment, Go API as a container on AWS Lambda, React app on S3 + CloudFront, Postgres on Neon, login through Cognito
 - CI/CD, GitHub Actions deploying to AWS
+
+# AI Use
+- Every line of every file is written by me, unless explicitly stated otherwise in the file
+- AI could probably create this project in 30 minutes, but I believe learning is a result of time and effort spent working through problems
+- On the other hand, I am trying to complete this project in a timely fashion while being exposed to a lot of new technologies, syntaxes, and patterns. To help focus my learning on information that is directly relevant to this project I use Claude Code
+- Claude is instructed that this is a learning project and that I want to learn by doing, as a result it avoids giving me direct answers and instead directs me to documentation resources, provides examples, points out errors in my understanding, and tells me what decisions I need to think through
+- I think there is also value in learning about the wrong things: accidentally reading documentation for the wrong system, learning about a database or library you decide not to use, or dechipering a confusing syntax error through google. But I think for this project, my current approach is the best way to balance time spent
 
 # Planned Feature Set
 - In Porygon, decks are represented as multiple versions of your exact 60 cards, helping you to track tweaks made to your deck and how they perform.
