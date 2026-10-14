@@ -19,3 +19,4 @@
         - more members, specific to the problem type, can be preset, these are "extension members"
     - Generic problems don't need new problem types, for example there is no need for a "write access disallowed" problem type when the 403 forbidden code exists
     - You should also be careful not to expose attack vectors by reavealing implementation internals through the error messages
+4. Next time, I would use Open API 3.1 instead of 3.0.3 for nullable referenced schemas. Claude chose 3.0.3 because it thought oapi-codegen didn't support 3.1 but it does.

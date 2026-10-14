@@ -47,7 +47,8 @@
     - archetype icons are global and read only
     - GET /archetypes/{archetype_id} and GET /archetype-icons/{archetype_icon_id} are unecessary since all archetypes and icons will need to load in a picker anyways
 8. id will be type integer, format int64 (matching bigint), when it gets to TS it will be number which can't go as high but it's high enough
-9. No pagination needed for now, but response should be in an object containing a deck array so pagination can be supported later 
+9. No pagination needed for now, but response should be in an object containing a deck array so pagination can be supported later
+10. Archetype and ArchetypeIcon will be referenced in containing schemas rather than embedded. Since they are nullable and OpenAPI has ugly support for nullable ref schemas.
 
 # Cascades
 - Deleting a user, deck, version, match, game cascasde to delete everything lower
@@ -79,3 +80,7 @@
 - PUT       /archetypes/{archetype_id}              -- Edits an archetype
 - DELETE    /archetypes/{archetype_id}              -- Deletes an archetype
 - GET       /archetype-icons                        -- Gets all archetype icons
+
+# Operation Ids
+prefixes: get, replace, delete, list, create
+suffixes: {schema name}
