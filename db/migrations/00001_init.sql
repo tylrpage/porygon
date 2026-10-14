@@ -11,7 +11,7 @@ CREATE TABLE users (
 CREATE TABLE archetype_icons (
     id          bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name        text NOT NULL UNIQUE CONSTRAINT archetype_icons_name_not_empty CHECK (name <> ''),   -- pokemon name, ex: Dipplin, Mega Lucario
-    image_url   text                                                -- nullable: means use placeholder
+    image_url   text NOT NULL
 );
 
 CREATE TABLE archetypes (
