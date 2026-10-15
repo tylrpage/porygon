@@ -32,7 +32,6 @@ CREATE TABLE decks (
     notes               text NOT NULL DEFAULT '',
     CONSTRAINT decks_user_id_name_key UNIQUE (user_id, name)
 );
-CREATE INDEX decks_user_id_idx ON decks (user_id);
 
 CREATE TABLE deck_versions (
     id                  bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -44,7 +43,6 @@ CREATE TABLE deck_versions (
     updated_at          timestamptz NOT NULL DEFAULT now(),
     CONSTRAINT deck_versions_deck_id_name_key UNIQUE (deck_id, name)
 );
-CREATE INDEX deck_versions_deck_id_idx ON deck_versions (deck_id);
 
 CREATE TABLE environments (
     id                  bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
