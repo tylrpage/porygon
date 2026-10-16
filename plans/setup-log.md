@@ -9,3 +9,4 @@ This is for me to write down the steps I needed to take to run everything locall
     1. `docker compose ps` and check if status is healthy
 6. Run the migration
     1. ` goose -dir db/migrations postgres "postgres://porygon:porygon@localhost:5432/porygon?sslmode=disable" up`
+7. Install sqlc v1.31.1 (can't easily be installed as go tool on Windows)

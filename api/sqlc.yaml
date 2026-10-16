@@ -1,0 +1,23 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    schema: "../db/migrations"     # sqlc understands goose files and ignores the Down section
+    queries: "db/queries"          # relative to this yaml
+    gen:
+      go:
+        package: "db"
+        out: "internal/db"
+        sql_package: "pgx/v5"
+        emit_pointers_for_null_types: true
+        emit_empty_slices: true               # nil slices are instead []
+        overrides:
+        - db_type: "timestamptz"
+          go_type: 
+            import: "time"
+            type: "Time"
+        - db_type: "timestamptz"
+          go_type:
+            import: "time"
+            type: "Time"
+            pointer: true
+          nullable: true
